@@ -47,7 +47,7 @@ var orm = {
       if (err) {
         throw err;
       }
-      cd(result);
+      cb(result);
     });
   },
   insertOne: function(table, cols, vals, cb) {
@@ -66,7 +66,7 @@ var orm = {
       if (err) {
         throw err;
       }
-      cd(result);
+      cb(result);
     });
   },
   updateOne: function(table, objColVals, condition, cb) {
