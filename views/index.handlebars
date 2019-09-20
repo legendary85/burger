@@ -5,9 +5,10 @@
 <ul>
   {{!-- loops through movies table --}}
   <ul>
+    {{!-- Key of object passing in data from table --}}
     {{#each burgers}}
     {{#unless devoured}}
-    {{> burgers/burger-block devoured=true}}
+    {{> burgers/burger-block devour=false}}
     {{/unless}}
     {{/each}}
   </ul>
@@ -19,8 +20,9 @@
   <ul>
     {{#each burgers}}
     {{#if devoured}}
-    {{> burgers/burger-block devoured=false}}
+    {{> burgers/burger-devoured devour=true}}
     {{/if}}
+
     {{/each}}
   </ul>
 
@@ -28,21 +30,14 @@
   {{!-- Form that will allow us to add data to our database --}}
   {{!-- When submit button is click a POST response is submitted the /create route --}}
   {{!-- /create is what we will be referencing with our post response --}}
-  <form class="create-form">
+  <form class="card-body">
     <div class="form-group">
       <label for="burger"> Burger Name:</label>
       <input type="text" id="burger" name="name">
     </div>
-
-    {{!-- Remove later after testing --}}
-    <div class="form-group">
-      <label for="devour">Devoured?</label><br>
-      <input type="radio" name="devour" value="1" checked> Devoured!<br>
-      <input type="radio" name="devour" value="0"> Ready
-    </div>
-
-    <button type="submit">Add Burger</button>
+    <button class="addBurger">Add Burger</button>
   </form>
+  </div>
 
 
 

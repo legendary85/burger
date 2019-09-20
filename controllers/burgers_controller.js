@@ -6,20 +6,25 @@ var burger = require("../models/burger.js");
 
 // Create all our routes and set up logic within those routes where required.
 
+// router.get("/", function(req, res) {
+//   res.redirect("/index");
+// });
+
 //selectAll
 router.get("/", function(req, res) {
   burger.selectAll(function(data) {
     var hbsObject = {
-      burger: data
+      burgers: data
     };
     console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
 
-//insertOne
-router.post("/api/bugers", function(req, res) {
-  burger.create(
+//We create a burger here
+router.post("/api/burgers", function(req, res) {
+  console.log(req.body);
+  burger.insertOne(
     ["burger_name", "devoured"],
     [req.body.burger_name, req.body.devoured],
     function(result) {
@@ -29,7 +34,7 @@ router.post("/api/bugers", function(req, res) {
   );
 });
 
-//updatOne
+//updatOne Devour a burger
 router.put("/api/burgers/:id", function(req, res) {
   var conditon = "id = " + req.params.id;
 
