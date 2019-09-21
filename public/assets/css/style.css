@@ -1,0 +1,95 @@
+.jumbotron {
+  background-color: transparent !important;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+}
+h1 {
+  font-size: 3.5rem !important;
+  color: white;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: #2eaeea;
+}
+
+.gb_logo {
+  height: 250px;
+  width: 225px;
+}
+
+#bg {
+  background-color: red;
+}
+
+.addBurger {
+  background-color: #2eaeea !important;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: red;
+}
+
+a.addburger: hover {
+  color: red;
+}
+
+#devoured-card-header {
+  background: #2eaeea !important;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: red;
+}
+
+.devoured-card {
+  border: #2eaeea;
+}
+.card-body {
+  background: transparent !important;
+}
+#toEat {
+  background: #2eaeea !important;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: red;
+}
+
+.font {
+  font-size: 2.5rem !important;
+  font-family: "Luckiest Guy", cursive;
+  color: white;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: #2eaeea;
+}
+
+.delete-burger {
+  background: #2eaeea !important;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: red;
+}
+
+.change-devoured {
+  background: #2eaeea !important;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: red;
+}

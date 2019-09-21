@@ -1,49 +1,99 @@
-<h1>Eat-Da_Burger!</h1>
+{{!--  --}}
 
-<h2>Burgers to Eat</h2>
-
-<ul>
-  {{!-- loops through movies table --}}
-  <ul>
-    {{!-- Key of object passing in data from table --}}
-    {{#each burgers}}
-    {{#unless devoured}}
-    {{> burgers/burger-block devour=false}}
-    {{/unless}}
-    {{/each}}
-  </ul>
-
-
-
-  <h2>Devoured Burgers</h2>
-
-  <ul>
-    {{#each burgers}}
-    {{#if devoured}}
-    {{> burgers/burger-devoured devour=true}}
-    {{/if}}
-
-    {{/each}}
-  </ul>
-
-  <h2>Add a Burger</h2>
-  {{!-- Form that will allow us to add data to our database --}}
-  {{!-- When submit button is click a POST response is submitted the /create route --}}
-  {{!-- /create is what we will be referencing with our post response --}}
-  <form class="card-body">
-    <div class="form-group">
-      <label for="burger"> Burger Name:</label>
-      <input type="text" id="burger" name="name">
-    </div>
-    <button class="addBurger">Add Burger</button>
-  </form>
+<div id="bg" class="container-fluid">
+  <div class="jumbotron">
+    <img class="gb_logo" src="/assets/img/PinClipart.com_welcome-home-clip-art_2863801.png" alt="">
+    <h1>Welcome 2 Good Burger!!</h1>
   </div>
 
 
 
-  {{!-- ADD A BURGER --}}
-  {{!-- <form method="POST" action="/create">
-  <textarea type="text" name="burger"></textarea>
-  <button type="submit">ADD BURGER
-     </button>
-</form> --}}
+  <div class="row mt-4">
+    <div class="col-md-6 mt-4">
+      <div class="card border border-primary">
+        <div class="card-header bg-primary text-white" id="toEat">
+          Burgers 2 Eat!
+        </div>
+
+        <ul>
+          {{!-- loops through movies table --}}
+          <ul>
+            {{!-- Key of object passing in data from table --}}
+            {{#each burgers}}
+            {{#unless devoured}}
+            {{> burgers/burger-block devour=false}}
+            {{/unless}}
+            {{/each}}
+          </ul>
+      </div>
+    </div>
+
+
+
+
+    <div class="col-md-6 mt-4">
+      <div class="card devoured-card">
+        <div class="card-header text-white" id="devoured-card-header">
+          Devoured burgers
+        </div>
+        <!--When a burger has been devoured, put burger here-->
+        <div class="card-body">
+
+
+          <ul>
+            {{#each burgers}}
+            {{#if devoured}}
+            {{> burgers/burger-devoured devour=true}}
+            {{/if}}
+
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="row">
+    <!-- Empty Div to help center textarea -->
+    <div class="col-md-3"></div>
+
+    <!-- Burger Input Box -->
+    <div class="form-group col-md-6">
+      <center><label for="new_burger" class="font">Can I take your order?</label></center>
+      <textarea class="form-control" columns="8" rows="4" id="burger" name="burger_name"></textarea>
+    </div>
+
+    <!-- Empty Div to help center textarea -->
+    <div class="col-md-3"></div>
+  </div>
+
+  <!-- Submit Button -->
+  <center>
+    <button id="submit-button" type="submit" class="addBurger btn btn-danger ">Order</button>
+  </center>
+
+  </form>
+  <br>
+  <br>
+  <br>
+  <!--Footer-->
+
+
+
+</div>
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 By: Kourtney McCullough
+    <a href="https://github.com/legendary85/burger"> GitHub</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+{{!-- Form that will allow us to add data to our database --}}
+{{!-- When submit button is click a POST response is submitted the /create route --}}
+{{!-- /create is what we will be referencing with our post response --}}
