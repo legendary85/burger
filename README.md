@@ -37,9 +37,9 @@ The demo of "Welcome 2 Good Burger" can be found [Here.](https://lit-fjord-52784
 
 - Mobile View
 
-![Desktop View](/screenshots/NewMsTop.png)
+  ![Desktop View](/screenshots/NewMsTop.png)
 
-![Desktop View](/screenshots/NewMsBottom.png)
+  ![Desktop View](/screenshots/NewMsBottom.png)
 
 ### Developer
 
