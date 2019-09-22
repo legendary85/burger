@@ -4,9 +4,9 @@ SMU Trilogy Coding Bootcamp Summer 2019 Week 14: NodeJS | MySQL | Express | Hand
 
 # Description
 
-Welcome 2 Good Burger is a simple full-stack application with a front end implemented with HTML/CSS and elements from the Bootstrap framework and the backend implemented with Node.js and Express. HTML template was done with the help of Handlebars.
+Welcome 2 Good Burger is a simple full-stack application with a front end implemented with HTML/CSS with elements from the Bootstrap framework and the backend implemented with Node.js and Express. The HTML template was done with the help of Handlebars.
 
-The user will enter any burger name to add it to the "Burgers 2 Eat!" menu. This also adds the new burger entry into MySQL database. A "Devour Me!" button is dynamically added with the burger name each time an entry is made. Once the "Devour Me" button is clicked, the specified burger is then removed frome the "Burgers 2 Eat!" menu and added to the "Devoured Burgers" menu. A "TRASH!" button is dynamically added eat time a burger is added . Anytime time the "TRASH!" button is clicked, the burger name associated button is removed.
+The user will enter any burger name to add it to the "Burgers 2 Eat!" menu. This also adds the new burger entry into MySQL database. A "Devour Me!" button is dynamically added with the burger name each time an entry is made. Once the "Devour Me" button is clicked, the specified burger is then removed frome the "Burgers 2 Eat!" menu and added to the "Devoured Burgers" menu. A "TRASH!" button is dynamically added each time a burger is added . Once the "TRASH!" button is clicked, the burger name associated with that button is removed.
 
 ## Packages installed
 
