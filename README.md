@@ -32,6 +32,7 @@ The demo of "Welcome 2 Good Burger" can be found here.
 ## Screenshots
 
 - Desktop View
+  ![Desktop View](/screenshots/FullScreenHeade.png)
 - Mobile View
 
 ### Developer
