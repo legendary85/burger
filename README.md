@@ -33,12 +33,16 @@ The demo of "Welcome 2 Good Burger" can be found here.
 
 - Desktop View
   ![Desktop View](/screenshots/fsTop.png)
+
   ![Desktop View](/screenshots/fsBottom.png)
 
 - Mobile View
-  ![Desktop View](/screenshots/msTop.png)
-  ![Desktop View](/screenshots/msMiddle.png)
-  ![Desktop View](/screenshots/msBottom.png)
+
+![Desktop View](/screenshots/msTop.png)
+
+![Desktop View](/screenshots/msMiddle.png)
+
+![Desktop View](/screenshots/msBottom.png)
 
 ### Developer
 
