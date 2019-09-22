@@ -14,7 +14,6 @@ The user will enter any burger name to add it to the "Burgers 2 Eat!" menu. This
 - express-handlebars
 - mysql
 - nodemon
--
 
 ## Functionality
 
@@ -27,7 +26,7 @@ Using an home-grown ORM, this app uses 4 basic CRUD functiond (http methods)
 
 ## Demo
 
-The demo of "Welcome 2 Good Burger" can be found here.
+The demo of "Welcome 2 Good Burger" can be found [Here.](https://lit-fjord-52784.herokuapp.com/).
 
 ## Screenshots
 
